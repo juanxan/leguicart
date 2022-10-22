@@ -1,0 +1,35 @@
+p{
+    margin: 0;
+}
+.menu{
+    width: 17vw;
+}
+.menu-option{
+    
+    &__header{
+        display: flex;
+        &--img{
+            padding: 2rem 0 2rem 0;
+            margin: auto;
+        }
+    }
+    &__content{
+        padding: 0 2rem 0 2rem;
+     }
+    &__content a{
+       display: flex;
+       align-items: center;
+    }
+    &__content a p{
+        position: relative;
+        left: 22px;
+        color: #828282;
+     }
+   
+}
+section{
+    background-color: white;
+}
+span{
+    color: #828282;
+}

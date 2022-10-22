@@ -1,0 +1,16 @@
+<section class="vh-100 menu">
+        <div class="menu-option">
+            <div class="menu-option__header">
+                <img src="../../../../assets/img/logo.png" class="img-fluid menu-option__header--img" alt="leguiCart" width="140" height="140">
+            </div>
+            <div class="menu-option__content" *ngFor="let item of componentes | async">
+                <a type="button" routerLink="item.redirectTo" class="btn legui-btn btn-floating mx-1">
+                    <span><i class="{{item.icon}}"></i></span>
+                    <p>{{item.name}}</p>
+                </a>
+            </div>
+            <div class="menu-option__footer">
+
+            </div>
+        </div>
+</section>
