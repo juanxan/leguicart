@@ -1,19 +1,20 @@
-import { Component, AfterViewInit ,ViewChild  } from '@angular/core';
+import { Component, AfterViewInit ,ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 
 @Component({
-  selector: 'app-car-admin',
-  templateUrl: './car-admin.component.html',
-  styleUrls: ['./car-admin.component.scss']
+  selector: 'app-category',
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.scss']
 })
-export class CarAdminComponent implements AfterViewInit   {
+export class CategoryComponent implements AfterViewInit {
+  
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   clickedRows = new Set<PeriodicElement>();
   @ViewChild('paginator') paginator: MatPaginator;
 
-  constructor() {}
+  constructor() { }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator
@@ -37,6 +38,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, name: 'Abcd', weight: 1.0079, symbol: 'H'},
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
   {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},

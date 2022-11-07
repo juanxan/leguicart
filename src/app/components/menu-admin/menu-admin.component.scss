@@ -2,10 +2,14 @@ p{
     margin: 0;
 }
 .menu{
-    width: 17vw;
+    width: 16vw;
+    height: 90vh;
 }
 .menu-option{
-    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
     &__header{
         display: flex;
         &--img{
@@ -15,6 +19,14 @@ p{
     }
     &__content{
         padding: 0 2rem 0 2rem;
+        .car-add{
+            background-color: #94c120;
+            border-radius: 5px;
+            color: white;
+            a, p,span{
+                color: white;
+            }
+        }
      }
     &__content a{
        display: flex;
@@ -25,10 +37,24 @@ p{
         left: 22px;
         color: #828282;
      }
+     .active-link{
+        background-color: white;
+        border-radius: 5px;
+        color: white;
+        -webkit-box-shadow: 0px 0px 44px -17px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 44px -17px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 44px -17px rgba(0,0,0,0.75);
+        a, p,span{
+            color: black;
+        }
+    }
+    .btn:active{
+        border-color: transparent;
+    }
    
 }
 section{
-    background-color: white;
+    background-color: #FAFAFA;
 }
 span{
     color: #828282;
