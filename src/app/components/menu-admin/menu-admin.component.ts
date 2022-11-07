@@ -11,11 +11,11 @@ import { Componente } from '../../interfaces/menu-admin.interfaces';
 export class MenuAdminComponent implements OnInit {
 
   componentes!: Observable<Componente[]>;
+
   constructor(private menuService: MenuService) { }
 
   ngOnInit(): void {
     this.componentes = this.menuService.getMenuOpts();
-    console.log(this.componentes);
   }
   
 }

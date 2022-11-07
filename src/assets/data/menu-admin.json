@@ -2,27 +2,27 @@
     {
       "icon": "fa-solid fa-car",
       "name": "Carros",
-      "redirectTo": "/action-sheet"
+      "redirectTo": "cars"
     },
     {
-      "icon": "fa-solid fa-car",
-      "name": "Alert",
-      "redirectTo": "/alert"
+      "icon": "fa-solid fa-tag",
+      "name": "Categoria",
+      "redirectTo": "category"
     },
     {
       "icon": "fa-solid fa-car",
       "name": "Avatar",
-      "redirectTo": "/avatar"
+      "redirectTo": "avatar"
     },
     {
       "icon": "fa-solid fa-car",
       "name": "Botones y router",
-      "redirectTo": "/botones"
+      "redirectTo": "botones"
     },
     {
       "icon": "fa-solid fa-car",
       "name": "Botones y router",
-      "redirectTo": "/botones"
+      "redirectTo": "botones"
     }
   ]
   

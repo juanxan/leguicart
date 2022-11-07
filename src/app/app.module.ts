@@ -11,24 +11,25 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    HomeComponent,
-    ProfileComponent
-    
+    HomeComponent
   ],
   imports: [
+    CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    CommonModule,
+    HttpClientModule,
     RouterModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
